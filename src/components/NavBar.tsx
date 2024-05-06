@@ -27,7 +27,7 @@ export default function NavBar({ options } : {options: any}) {
             </button>
             <div className={`w-full md:block md:w-auto ${isOpen ? 'block' : 'hidden'}`} id="navbar-default">
                 <ul className="flex justify-around items-center gap-4 pt-5">
-                    {options.map((item, index) => (
+                    {options.map((item: string, index: number) => (
                         <li key={index}>
                             <a href="#">{item}</a>
                         </li>
