@@ -1,0 +1,23 @@
+{
+  "Index": {
+    "title": "Hello world!"
+  },
+  "Header": {
+    "Home": "Home",
+    "About": "About",
+    "Contact": "Contact"
+  },
+  "TypingText": {
+    "Line1": "Allow us to lend thee aid,",
+    "Line2": "Thy commerce to upgrade,",
+    "Line3": "Thy commerce to elevate and persuade!",
+    "Line4": "Thy commerce to persuade!"
+  },
+  "HeroText": {
+    "Line1": "From minuscule to meager,",
+    "Line2": "fragment by fragment, doth appear."
+  },
+  "UI":{
+    "commenceBtn": "Let us commence"
+  }
+}

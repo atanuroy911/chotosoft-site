@@ -1,0 +1,25 @@
+.circle-container {
+    width: 300px; /* Adjust container size as needed */
+    height: 300px; /* Adjust container size as needed */
+    position: relative;
+}
+
+.circle-item {
+    position: absolute;
+    width: 100px; /* Adjust image size as needed */
+    height: 100px; /* Adjust image size as needed */
+    top: calc(50% - 50px); /* Adjust position of images */
+    left: calc(50% - 50px); /* Adjust position of images */
+}
+
+.circle-item:nth-child(1) {
+    transform: rotate(0deg) translate(150px) rotate(-0deg); /* Adjust angle and distance of first image */
+}
+
+.circle-item:nth-child(2) {
+    transform: rotate(120deg) translate(150px) rotate(-120deg); /* Adjust angle and distance of second image */
+}
+
+.circle-item:nth-child(3) {
+    transform: rotate(240deg) translate(150px) rotate(-240deg); /* Adjust angle and distance of third image */
+}
