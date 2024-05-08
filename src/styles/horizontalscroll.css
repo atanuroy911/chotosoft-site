@@ -1,0 +1,8 @@
+@keyframes infinite-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.infinite-scroll {
+    animation: infinite-scroll 25s linear infinite; /* Adjust the duration (20s) as needed */
+}

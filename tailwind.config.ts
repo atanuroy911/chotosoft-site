@@ -62,6 +62,11 @@ const config = {
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
+          
+        },
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
         },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
@@ -71,6 +76,7 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
       },
     },
   },

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "@/styles/globals.css";
-import Starfield from "@/components/starfield";
 
 const DMSans = DM_Sans({ subsets: ["latin"] });
 

@@ -82,13 +82,16 @@
 
 @layer utilities {
   .step {
-    counter-increment: step;
+    counter-increment: step;  
   }
 
   .step:before {
     @apply absolute w-8 h-8 bg-muted rounded-full font-medium text-center text-base inline-flex items-center justify-center -indent-px;
     @apply ml-[-41px];
     content: counter(step);
+  }
+  .paused {
+    animation-play-state: paused;
   }
 }
 
