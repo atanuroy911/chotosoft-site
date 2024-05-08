@@ -16,7 +16,7 @@ const HeroSection = ({ UIText, heroText, typingText }: { UIText: any, heroText: 
     }, []);
 
     return (
-        <div className="flex flex-col lg:flex-row lg:items-center lg:my-10 lg:mx-10">
+        <div className=" container flex flex-col lg:flex-row lg:items-center lg:my-10 lg:mx-10">
             {/* Left Column */}
             <div className="flex flex-col justify-center lg:w-1/2 lg:mr-4">
                 <div className="flex flex-col text-center md:text-pretty">

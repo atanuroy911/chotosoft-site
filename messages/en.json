@@ -18,6 +18,9 @@
     "Line2": "fragment by fragment, doth appear."
   },
   "UI":{
-    "commenceBtn": "Let us commence"
+    "commenceBtn": "Let us commence",
+    "web": "Websites",
+    "app": "Apps",
+    "soft": "Software"
   }
 }
