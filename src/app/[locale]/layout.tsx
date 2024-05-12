@@ -2,6 +2,7 @@
 import { ThemeProvider } from "@/components/theme-provider";
 import Header from "./Header";
 import { ParallaxProviders } from "@/components/parallax-provider";
+import Footer from "./Footer";
 
 export default function LocaleLayout({
   children,
@@ -25,7 +26,7 @@ export default function LocaleLayout({
             <Header />
 
             {children}
-
+            <Footer/>
             {/* <Starfield /> */}
           </ThemeProvider>
         </ParallaxProviders>

@@ -17,10 +17,20 @@
     "Line1": "From minuscule to meager,",
     "Line2": "fragment by fragment, doth appear."
   },
-  "UI":{
+  "UI": {
     "commenceBtn": "Let us commence",
     "web": "Websites",
     "app": "Apps",
     "soft": "Software"
+  },
+  "Footer": {
+    "Home": "Home",
+    "Support": "Support", 
+    "Resources": "Resources",
+    "FollowUs": "Follow us",
+    "Legal": "Legal",
+    "PrivacyPolicy": "Privacy Policy",
+    "TermsConditions": "Terms & Conditions",
+    "Copyright": "© 2024 ChotoSoft™. All Rights Reserved."
   }
 }

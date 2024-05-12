@@ -1,5 +1,3 @@
-import { ModeToggle } from "../../components/ToggleMode";
-import { ToggleLang } from "@/components/ToggleLang";
 import { useTranslations } from "next-intl";
 import NavBar from "@/components/NavBar";
 

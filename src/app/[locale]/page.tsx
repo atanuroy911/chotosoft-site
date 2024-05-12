@@ -4,6 +4,7 @@ import ServiceBanner from '@/components/ServiceBanner';
 import ProductBanner from '@/components/ProductBanner';
 import LogoCarousel from '@/components/LogoCarousel';
 import LogoSpotlight from '@/components/LogoSpotlight';
+import FeaturedWorks from '@/components/FeaturedWorks';
 
 export default function Index() {
   const t = useTranslations('TypingText');
@@ -15,6 +16,7 @@ export default function Index() {
       <ServiceBanner text1={ui('web')} text2={ui('app')} text3={ui('soft')} />
       {/* <LogoCarousel/> */}
       <LogoSpotlight/>
+      <FeaturedWorks/>
       <ProductBanner/>
     </div>
   </>
