@@ -4,6 +4,7 @@ import TypingComponent from '@/components/TypingComponent';
 import { useState, useEffect } from 'react';
 import '@/styles/herosection.css';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
 const HeroSection = ({ UIText, heroText, typingText }: { UIText: any, heroText: any, typingText: any }) => {
     const [rotation, setRotation] = useState(0);
@@ -33,7 +34,7 @@ const HeroSection = ({ UIText, heroText, typingText }: { UIText: any, heroText: 
             <br />
             {/* Right Column */}
             <div className="mx-auto image-section lg:h-md lg:w-1/2">
-                <img className="h-auto  lg:w-9/12 lg:w-sm lg:mx-20 object-cover transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-3.png" alt="image description" />
+                <Image className="h-auto  lg:w-9/12 lg:w-sm lg:mx-20 object-cover transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0" src="/content-gallery-3.png" alt="image description" width={300} height={300}/>
 
             </div>
         </div>

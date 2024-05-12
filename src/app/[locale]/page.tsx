@@ -5,6 +5,7 @@ import ProductBanner from '@/components/ProductBanner';
 import LogoCarousel from '@/components/LogoCarousel';
 import LogoSpotlight from '@/components/LogoSpotlight';
 import FeaturedWorks from '@/components/FeaturedWorks';
+import WhoAreWe from '@/components/WhoAreWe';
 
 export default function Index() {
   const t = useTranslations('TypingText');
@@ -15,9 +16,11 @@ export default function Index() {
       <HeroSection UIText={ui('commenceBtn')} heroText={[h('Line1'), h('Line2')]} typingText={[t('Line1'), t('Line2'), t('Line3'), t('Line4')]}></HeroSection>
       <ServiceBanner text1={ui('web')} text2={ui('app')} text3={ui('soft')} />
       {/* <LogoCarousel/> */}
-      <LogoSpotlight/>
       <FeaturedWorks/>
-      <ProductBanner/>
+      {/* <ProductBanner/> */}
+      <LogoSpotlight/>
+
+      <WhoAreWe/>
     </div>
   </>
 }

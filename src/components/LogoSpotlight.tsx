@@ -1,6 +1,7 @@
 'use client';
 
 import { useTheme } from 'next-themes';
+import Image from 'next/image';
 import React from 'react';
 
 const LogoSpotlight: React.FC = () => {
@@ -20,10 +21,11 @@ const LogoSpotlight: React.FC = () => {
             <ul className="flex justify-evenly flex-wrap md:flex-row md:justify-between">
                 {[1, 2, 3, 4, 5].map((index) => (
                     <li key={index} className="transition-all duration-300 ease-in-out py-2 transform hover:scale-105">
-                        <img
-                            src={getImageSource(`Brands-${index}`)}
+                        <Image
+                            src={getImageSource(`/Brands-${index}`)}
                             alt={`Image ${index}`}
                             className="w-32 md:w-36 h-auto transition-all duration-300 filter grayscale hover:grayscale-0"
+                            width={144} height={144}
                         />
                     </li>
                 ))}

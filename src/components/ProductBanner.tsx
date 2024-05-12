@@ -3,8 +3,8 @@ import { faMobileAlt, faCloud, faCubes, faMicrochip } from '@fortawesome/free-so
 
 export default function ProductBanner() {
     return (
-        <div className="h-auto py-5 px-8">
-            <h1 className="text-3xl font-bold px-4 text-center">What offerings shall we present?</h1>
+        <div className="h-auto py-12 px-8">
+            <h1 className="text-3xl font-bold px-4 py-2 text-center">What offerings shall we present?</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
                 <div className="flex items-center justify-center p-4">
                     <FontAwesomeIcon icon={faMobileAlt} className="mr-2 w-6 text-gray-500" />
