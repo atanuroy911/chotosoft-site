@@ -8,14 +8,14 @@
     "Contact": "Contact"
   },
   "TypingText": {
-    "Line1": "Allow us to lend thee aid,",
-    "Line2": "Thy commerce to upgrade,",
-    "Line3": "Thy commerce to elevate and persuade!",
-    "Line4": "Thy commerce to persuade!"
+    "Line1": "Allow us to lend our expertise,",
+    "Line2": "Your software needs to meet with ease,",
+    "Line3": "From apps to websites, all that you please!",
+    "Line4": "Your digital dreams, we will appease!"
   },
   "HeroText": {
-    "Line1": "From minuscule to meager,",
-    "Line2": "fragment by fragment, doth appear."
+    "Line1": "From concept to creation,",
+    "Line2": "Fragment by fragment, bringing innovation."
   },
   "UI": {
     "commenceBtn": "Let us commence",
@@ -25,12 +25,24 @@
   },
   "Footer": {
     "Home": "Home",
-    "Support": "Support", 
+    "Support": "Support",
     "Resources": "Resources",
     "FollowUs": "Follow us",
     "Legal": "Legal",
     "PrivacyPolicy": "Privacy Policy",
     "TermsConditions": "Terms & Conditions",
     "Copyright": "© 2024 ChotoSoft™. All Rights Reserved."
+  },
+  "ServiceBanner": {
+    "service1_title": "App Development",
+    "service1_description": "Custom mobile app development for iOS and Android platforms.",
+    "service2_title": "Web Development",
+    "service2_description": "Responsive and scalable web development services.",
+    "service3_title": "Native Development",
+    "service3_description": "High-performance native applications for various platforms.",
+    "service4_title": "Blender Assets",
+    "service4_description": "Creation of high-quality 3D assets and scenes using Blender.",
+    "service5_title": "Graphic Design",
+    "service5_description": "Professional graphic design services for all your needs."
   }
 }

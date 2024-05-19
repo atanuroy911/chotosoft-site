@@ -15,7 +15,7 @@ const TypingComponent = ({text}: {text: any}) => {
       wrapper="span"
       speed={50}
       repeat={Infinity}
-      className={"text-xl lg:text-3xl"}
+      className={"text-sm text-start lg:text-lg"}
     />
   );
 };

@@ -1,31 +1,27 @@
 'use client'
 
-import TypingComponent from '@/components/TypingComponent';
-import { useState, useEffect } from 'react';
 import '@/styles/herosection.css';
 import { Button } from '@/components/ui/button';
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay"
+import Fade from "embla-carousel-fade"
 import Image from 'next/image';
 
 const HeroSection = ({ UIText, heroText, typingText }: { UIText: any, heroText: any, typingText: any }) => {
-    const [rotation, setRotation] = useState(0);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setRotation((prevRotation) => (prevRotation + 120) % 360); // Rotate 120 degrees each time
-        }, 2000); // Change this value to adjust the interval
-        return () => clearInterval(interval);
-    }, []);
+    const scrollToProduct = (product: string) => {
+        const featuredWorksSection = document.getElementById(`${product}`);
+        if (featuredWorksSection) {
+            featuredWorksSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
     return (
-        <div className=" container flex flex-col lg:flex-row lg:items-center lg:my-10 lg:mx-10">
+        <section id="hero-section" className="container flex flex-col lg:flex-row lg:items-center sm:pt-4 md:py-0 lg:my-10 lg:mx-10">
             {/* Left Column */}
             <div className="flex flex-col justify-center lg:w-1/2 lg:mr-4">
                 <div className="flex flex-col text-center md:text-pretty">
                     <h1 className='text-2xl md:text-4xl font-bold py-3'>{heroText[0]}</h1>
                     <h2 className='text-xl md:text-3xl pb-2'>{heroText[1]}</h2>
-                    <div className="h-12 md:h-auto"> {/* Set max height to two lines */}
-                        <TypingComponent text={typingText} />
-                    </div>
                 </div>
                 <div className='text-center font-bold py-4'>
                     <Button className='text-md hover:bg-green-600 dark:hover:text-white '>{UIText}</Button>
@@ -33,13 +29,28 @@ const HeroSection = ({ UIText, heroText, typingText }: { UIText: any, heroText: 
             </div>
             <br />
             {/* Right Column */}
-            <div className="mx-auto image-section lg:h-md lg:w-1/2">
-                <Image className="h-auto  lg:w-9/12 lg:w-sm lg:mx-20 object-cover transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0" src="/content-gallery-3.png" alt="image description" width={300} height={300}/>
-
+            <div className="mx-auto h-auto w-auto lg:h-md lg:w-1/2">
+                <Carousel className="w-full mx-auto"
+                    plugins={[
+                        Autoplay({ delay: 2200 }),
+                        Fade(),
+                    ]}
+                >
+                    <CarouselContent>
+                        <CarouselItem>
+                            <Image className="h-auto mx-auto lg:w-9/12 lg:w-sm lg:mx-20 object-cover transition-all duration-300 rounded-lg cursor-pointer" src="/product-1.png" alt="image description" width={300} height={200} onClick={() => { scrollToProduct("product-1") }} />
+                        </CarouselItem>
+                        <CarouselItem>
+                            <Image className="h-auto mx-auto lg:w-9/12 lg:w-sm lg:mx-20 object-cover transition-all duration-300 rounded-lg cursor-pointer" src="/product-2x.png" alt="image description" width={300} height={200} onClick={() => { scrollToProduct("product-2") }} />
+                        </CarouselItem>
+                        <CarouselItem>
+                            <Image className="h-auto mx-auto lg:w-9/12 lg:w-sm lg:mx-20 object-fit transition-all duration-300 rounded-lg cursor-pointer" src="/product-3.png" alt="image description" width={300} height={200} onClick={() => { scrollToProduct("product-3") }}/>
+                        </CarouselItem>
+                    </CarouselContent>
+                </Carousel>
             </div>
-        </div>
+        </section>
     );
 };
 
 export default HeroSection;
-
